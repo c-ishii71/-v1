@@ -7,9 +7,18 @@
 
 <style>
 /* ===== 背景は html に1回だけ固定 ===== */
+
 html {
   height: 100%;
-  background: linear-gradient(#67b7dc, #7ec47a);
+  background-color: #ffd800;
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(255, 200, 0, 0.8) 0px,
+    rgba(255, 200, 0, 0.8) 20px,
+    rgba(255, 230, 0, 0.8) 20px,
+    rgba(255, 230, 0, 0.8) 40px
+  );
+  
   background-attachment: fixed; /* ← これが超重要 */
 }
 
